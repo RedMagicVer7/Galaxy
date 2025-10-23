@@ -612,6 +612,26 @@ p {
   gap: 1.2rem;
 }
 
+.food-hero-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1.5rem;
+}
+
+.food-hero-gallery button,
+.experience-display button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: zoom-in;
+  width: 100%;
+}
+
+.food-hero-gallery .primary {
+  grid-row: span 2;
+}
+
 .food-gallery-card {
   border-radius: 26px;
   overflow: hidden;
@@ -800,7 +820,9 @@ p {
 
 .experience-display img {
   width: 100%;
-  display: block;
+  max-width: 640px;
+  border-radius: 1.5rem;
+  box-shadow: 0 40px 60px rgba(0, 0, 0, 0.35);
 }
 
 .experience-actions {
