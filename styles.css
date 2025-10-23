@@ -192,6 +192,7 @@ input:focus-visible {
   letter-spacing: 0.08em;
   font-weight: 600;
   text-transform: uppercase;
+  color: var(--text);
 }
 
 
