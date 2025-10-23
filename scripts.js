@@ -11,7 +11,8 @@ const loadSharedLayout = async () => {
     if (sharedHeader) {
       const currentHeader = document.querySelector('header.site-header');
       if (currentHeader && currentHeader !== sharedHeader) {
-        currentHeader.replaceWith(sharedHeader.cloneNode(true));
+        const newHeader = sharedHeader.cloneNode(true);
+        currentHeader.replaceWith(newHeader);
       }
     }
 
@@ -26,7 +27,24 @@ const loadSharedLayout = async () => {
   }
 };
 
+const setActiveNavItem = () => {
+  const menuItems = document.querySelectorAll('#site-menu a');
+  const path = window.location.pathname.split('/').pop() || 'index.html';
+
+  menuItems.forEach((link) => {
+    const href = link.getAttribute('href') || '';
+    const isHashLink = href.startsWith('#');
+    const hrefPath = isHashLink ? 'index.html' : href.split('#')[0];
+
+    if (path === hrefPath) {
+      link.classList.add('is-active');
+    }
+  });
+};
+
 loadSharedLayout().then(() => {
+  setActiveNavItem();
+
   const menuToggle = document.querySelector('.nav-toggle');
   const menu = document.querySelector('.menu');
 
