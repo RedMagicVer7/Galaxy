@@ -111,7 +111,9 @@
           <div class="menu-posters" data-animate="fade-up" data-delay="120">
             <figure class="poster-card">
               <div class="poster-frame">
-                <img src="./assets/food/Galaxy-menu-A3_page-0001-scaled.webp" alt="Galaxy London food menu page 1" loading="lazy" />
+                <button type="button" data-lightbox-trigger data-src="./assets/food/Galaxy-menu-A3_page-0001-scaled.webp" data-caption="Full menu · Page 1">
+                  <img src="./assets/food/Galaxy-menu-A3_page-0001-scaled.webp" alt="Galaxy London food menu page 1" loading="lazy" />
+                </button>
               </div>
               <div class="poster-actions">
                 <a class="poster-link" href="./assets/food/Galaxy-menu-A3_page-0001-scaled.webp" target="_blank" rel="noreferrer">View full resolution</a>
@@ -121,7 +123,9 @@
             </figure>
             <figure class="poster-card">
               <div class="poster-frame">
-                <img src="./assets/food/Galaxy-menu-A3_page-0002-scaled.webp" alt="Galaxy London food menu page 2" loading="lazy" />
+                <button type="button" data-lightbox-trigger data-src="./assets/food/Galaxy-menu-A3_page-0002-scaled.webp" data-caption="Full menu · Page 2">
+                  <img src="./assets/food/Galaxy-menu-A3_page-0002-scaled.webp" alt="Galaxy London food menu page 2" loading="lazy" />
+                </button>
               </div>
               <div class="poster-actions">
                 <a class="poster-link" href="./assets/food/Galaxy-menu-A3_page-0002-scaled.webp" target="_blank" rel="noreferrer">View full resolution</a>
@@ -227,6 +231,14 @@
     </main>
 
     <footer class="site-footer" id="contact"></footer>
+
+    <div class="image-lightbox" aria-hidden="true">
+      <div class="lightbox-content" role="dialog" aria-modal="true">
+        <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close image">&times;</button>
+        <img src="" alt="Expanded menu" />
+        <p class="lightbox-caption"></p>
+      </div>
+    </div>
   </body>
 </html>
 

@@ -698,7 +698,82 @@ p {
 .poster-frame img {
   width: 100%;
   display: block;
-  border-radius: 18px;
+  border-radius: 1.25rem;
+  box-shadow: 0 40px 60px rgba(0, 0, 0, 0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.poster-frame:hover img {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 30px 50px rgba(124, 92, 255, 0.35);
+}
+
+.poster-frame button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: zoom-in;
+  width: 100%;
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 5, 15, 0.84);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  backdrop-filter: blur(8px);
+}
+
+.image-lightbox.is-active {
+  display: flex;
+}
+
+.lightbox-content {
+  max-width: min(90vw, 960px);
+  width: 100%;
+  position: relative;
+}
+
+.lightbox-content img {
+  width: 100%;
+  border-radius: 1.5rem;
+  box-shadow: 0 32px 80px rgba(41, 216, 255, 0.18);
+}
+
+.lightbox-caption {
+  margin-top: 1rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(124, 92, 255, 0.45);
+  background: rgba(10, 10, 25, 0.75);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.lightbox-close:hover {
+  transform: scale(1.05);
+  border-color: rgba(41, 216, 255, 0.6);
+}
+
+@media (max-width: 640px) {
+  .lightbox-close {
+    top: -1rem;
+    right: -1rem;
+  }
 }
 
 .section-note {
