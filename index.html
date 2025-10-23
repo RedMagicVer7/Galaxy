@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galaxy London | Karaoke × Chinese BBQ</title>
+    <meta
+      name="description"
+      content="Galaxy London blends Chinese BBQ flavour with futuristic karaoke rooms. Join our membership, explore immersive packages, and book your next night out."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./scripts.js"></script>
+  </head>
+  <body>
+    <div class="background-canvas" aria-hidden="true">
+      <div class="aurora"></div>
+      <div class="grid"></div>
+    </div>
+
+    <header class="site-header" data-animate="fade-up">
+      <div class="container">
+        <a href="#top" class="brand" aria-label="Galaxy London home">
+          <img class="brand-logo" src="./assets/galaxy-logo.png" alt="Galaxy London logo" />
+          <span class="brand-name">Galaxy London</span>
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
+            <span class="nav-toggle-bar"></span>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <ul id="site-menu" class="menu">
+            <li><a href="#events">Events</a></li>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="food.html">Food &amp; Drink</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-cta">
+          <a class="btn btn-outline" href="https://www.opentable.co.uk/r/galaxy-london" target="_blank" rel="noreferrer">Book via OpenTable</a>
+          <a class="btn" href="#membership">Join Membership</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="notice-banner" role="note" data-animate="fade-up">
+      <div class="container notice-content">
+        <span class="notice-label">Notice</span>
+        <span class="notice-text">We enforce a strict no-alcohol policy for guests under 18. Please bring a valid photo ID upon arrival.</span>
+      </div>
+    </div>
+
+    <main id="top">
+      <section class="hero" id="experience">
+        <div class="container split">
+          <div class="hero-copy" data-animate="fade-up">
+            <p class="eyebrow">Karaoke × Chinese BBQ × Web3 Vibes</p>
+            <h1>Where Chinese flavours meet neon energy in London.</h1>
+            <p>
+              Step into immersive, space-tech private rooms, curated playlists, and charcoal-fired flavours. Galaxy London is your backstage pass to futuristic nights out, family celebrations, and late-night KTV sessions.
+            </p>
+            <div class="actions">
+              <a class="btn" href="#packages">Explore Packages</a>
+              <a class="btn-secondary" href="#menus">View Menus</a>
+            </div>
+            <dl class="highlights">
+              <div>
+                <dt>211 Walworth Rd</dt>
+                <dd>London, SE17 1RL</dd>
+              </div>
+              <div>
+                <dt>Members</dt>
+                <dd>15% off Sun–Thu</dd>
+              </div>
+              <div>
+                <dt>Contact</dt>
+                <dd>07904 018 377</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="hero-media" data-animate="scale-in">
+            <div class="glow-card">
+              <div class="orb orb-one"></div>
+              <div class="orb orb-two"></div>
+              <div class="hero-room">
+                <p class="hero-room-label">Immersive Nebula Room</p>
+                <p class="hero-room-meta">Sound-reactive LEDs · Spatial Audio · Party up to 12</p>
+              </div>
+            </div>
+            <div class="review-chip" data-animate="fade-up" data-delay="150">
+              <span class="icon">★</span>
+              <span class="score">653+ Five-Star Reviews</span>
+              <span class="caption">“Egg-cellent vibe & unforgettable service.”</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pillars" aria-label="What we offer">
+        <div class="container cards" data-animate="fade-up">
+          <article class="card">
+            <h2>Private KTV Suites</h2>
+            <p>Choose from futuristic suites tuned for Mandarin, Cantopop, K-pop, and global hits. Curated playlists, multilingual interfaces, and pro-grade mics keep the energy high.</p>
+            <a href="#packages" class="card-link">Discover rooms</a>
+          </article>
+          <article class="card">
+            <h2>Charcoal BBQ &amp; Chinese Classics</h2>
+            <p>Savour king prawn skewers, osmanthus duck, XO seafood fried rice, and signature sharing platters crafted for karaoke nights.</p>
+            <a href="#menus" class="card-link">View food line-up</a>
+          </article>
+          <article class="card">
+            <h2>Celebrations &amp; After-hours</h2>
+            <p>From birthdays to cocktail nights, lock in curated set menus, bottle service, and late-night happy hour packages for up to 8 guests.</p>
+            <a href="#packages" class="card-link">Plan your event</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="membership" id="membership">
+        <div class="container split">
+          <div class="membership-copy" data-animate="fade-up">
+            <p class="eyebrow">Members-only drops</p>
+            <h2>Join the Galaxy Membership</h2>
+            <p>
+              Unlock £10 off your first room booking, secret menus, priority reservations for premium suites, and birthday surprises that hit all the right notes.
+            </p>
+            <ul class="membership-perks">
+              <li>Instant 15% off karaoke &amp; dining (Sun–Thu)</li>
+              <li>Priority access to limited-edition room themes</li>
+              <li>Invites to members-only cocktail nights</li>
+              <li>Digital loyalty pass for simplified check-in</li>
+            </ul>
+            <a class="btn" href="https://galaxy-london.com/membership" target="_blank" rel="noreferrer">Activate Membership</a>
+          </div>
+          <div class="membership-card" data-animate="float">
+            <div class="card-front">
+              <div class="card-header">
+                <span class="chip"></span>
+                <span class="logo">Galaxy</span>
+              </div>
+              <div class="card-body">
+                <p class="card-tier">Genesis Member</p>
+                <p class="card-meta">ID 7147 · 94556</p>
+                <p class="card-expiry">Valid through Oct 2026</p>
+              </div>
+            </div>
+            <div class="card-back">
+              <p>“This isn’t just a membership – it’s your backstage pass to endless fun.”</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="packages" id="packages">
+        <div class="container">
+          <div class="section-heading" data-animate="fade-up">
+            <p class="eyebrow">Choose your energy</p>
+            <h2>Karaoke + Dining Packages</h2>
+            <p>Every package below comes directly from Galaxy London’s live offering—secure your suite with a deposit and know exactly what’s included.</p>
+          </div>
+          <div class="package-grid">
+            <article class="package-card" data-animate="fade-up">
+              <header>
+                <span class="package-tag">3 Hours · up to 8 guests</span>
+                <h3>Happy Hour Nebula</h3>
+                <p class="price">£188 <span>was £320</span></p>
+              </header>
+              <ul>
+                <li>Private karaoke suite for three hours</li>
+                <li>Crispy platter, salt & pepper wings, Korean fried chicken</li>
+                <li>6 beef skewers + 6 lamb skewers + 2 crispy boneless thighs</li>
+                <li>4 bottles of Corona &amp; 3 jugs of cocktails</li>
+              </ul>
+              <a class="btn-secondary" href="https://galaxy-london.com/happy-hour-packages/" target="_blank" rel="noreferrer">Reserve slot</a>
+            </article>
+            <article class="package-card" data-animate="fade-up" data-delay="90">
+              <header>
+                <span class="package-tag">4 Hours · deposit £440</span>
+                <h3>Set Menu S1</h3>
+                <p class="price">£440 <span>was £480</span></p>
+              </header>
+              <ul>
+                <li>BBQ skewers: beef, lamb, king prawn, chicken wings (×8 each)</li>
+                <li>Cold dishes: marinated beef, garlic ginger chicken, edamame &amp; peanuts, cucumber jellyfish salad</li>
+                <li>Staples: beef brisket ramen, tomato egg ramen, XO fried rice, triplet dumplings (20)</li>
+                <li>Drinks: Coke/Fanta/Sprite/Red Bull (×2 each), 3 juice jugs, 2 Prosecco + 18 shots</li>
+              </ul>
+              <a class="btn-secondary" href="https://galaxy-london.com/party-packages/" target="_blank" rel="noreferrer">Check availability</a>
+            </article>
+            <article class="package-card featured" data-animate="fade-up" data-delay="180">
+              <header>
+                <span class="package-tag">4 Hours · deposit £550</span>
+                <h3>Set Menu S2</h3>
+                <p class="price">£550 <span>was £600</span></p>
+              </header>
+              <ul>
+                <li>BBQ skewers: beef, lamb, king prawn, chicken wings (×10 each)</li>
+                <li>Cold dishes: marinated beef, garlic ginger chicken, spicy seasoned chicken, edamame &amp; peanuts, cucumber jellyfish salad</li>
+                <li>Staples: beef brisket ramen, tomato egg ramen, Korean cold noodles, XO fried rice, triplet dumplings</li>
+                <li>Drinks: Coke/Fanta/Sprite/Red Bull (×3 each), 3 juice jugs, 2 Prosecco + 24 shots</li>
+              </ul>
+              <a class="btn" href="https://galaxy-london.com/party-packages/" target="_blank" rel="noreferrer">Book the suite</a>
+            </article>
+            <article class="package-card" data-animate="fade-up" data-delay="270">
+              <header>
+                <span class="package-tag">4 Hours · deposit £660</span>
+                <h3>Set Menu S3</h3>
+                <p class="price">£660 <span>was £720</span></p>
+              </header>
+              <ul>
+                <li>BBQ skewers: beef, lamb, king prawn, chicken wings (×12 each)</li>
+                <li>Cold dishes: marinated beef, garlic ginger chicken, lo-mei platter, spicy seasoned chicken, edamame &amp; peanuts, cucumber jellyfish salad</li>
+                <li>Staples: beef brisket ramen, tomato egg ramen, Dan Dan noodles, Korean cold noodles, XO fried rice, triplet dumplings</li>
+                <li>Drinks: Coke/Fanta/Sprite/Red Bull (×4 each), 3 juice jugs, 2 Prosecco + 36 shots</li>
+              </ul>
+              <a class="btn-secondary" href="https://galaxy-london.com/party-packages/" target="_blank" rel="noreferrer">Lock it in</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="events" id="events">
+        <div class="container">
+          <div class="section-heading" data-animate="fade-up">
+            <p class="eyebrow">Upcoming events</p>
+            <h2>What’s happening at Galaxy</h2>
+            <p>Discover the next three highlights—membership perks, seasonal offers, and special dining nights straight from our live calendar.</p>
+          </div>
+          <div class="event-grid">
+            <article class="event-card" data-animate="fade-up">
+              <header>
+                <span class="event-tag">Membership Launch</span>
+                <h3>VIP Experience Membership</h3>
+              </header>
+              <p>Join Galaxy London membership to unlock £10 off your first room, secret discounts, priority bookings, and birthday surprises.</p>
+              <a class="btn-secondary" href="events.html">Learn more</a>
+            </article>
+            <article class="event-card" data-animate="fade-up" data-delay="120">
+              <header>
+                <span class="event-tag">October Special</span>
+                <h3>15% Off Karaoke &amp; Dining</h3>
+              </header>
+              <p>Save 15% on karaoke bookings and dining Sunday to Thursday, plus limited-time deals like £2 add-on signature dishes.</p>
+              <a class="btn-secondary" href="october-special.html">See the offer</a>
+            </article>
+            <article class="event-card" data-animate="fade-up" data-delay="240">
+              <header>
+                <span class="event-tag">Book a night</span>
+                <h3>Reserve via OpenTable</h3>
+              </header>
+              <p>Grab your private suite and BBQ feast through OpenTable—live availability, instant confirmation, and easy edits.</p>
+              <a class="btn" href="https://www.opentable.co.uk/r/galaxy-restaurant-and-karaoke-london" target="_blank" rel="noreferrer">Book now</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="menus" id="menus">
+        <div class="container split">
+          <div class="menu-copy" data-animate="fade-up">
+            <p class="eyebrow">Taste the galaxy</p>
+            <h2>Seasonal specials &amp; elevated comfort</h2>
+            <p>
+              From osmanthus duck to spicy bullfrog, our chefs keep the menu evolving with regional Chinese signatures and creative night-market snacks. Pair with bespoke cocktails or zero-proof refreshers.
+            </p>
+            <a class="btn" href="food.html">Check full menus</a>
+          </div>
+          <div class="menu-board" data-animate="fade-up" data-delay="140">
+            <div class="board-header">
+              <span>Tonight’s Drops</span>
+              <span class="pulse"></span>
+            </div>
+            <ul>
+              <li>
+                <span>Osmanthus Duck</span>
+                <span>Fragrant osmanthus glaze, tableside carving</span>
+                <span class="menu-note">桂花香酱鸭 · 桌边片切</span>
+              </li>
+              <li>
+                <span>Spicy Bullfrog</span>
+                <span>Chongqing aromatics, lotus root chips</span>
+                <span class="menu-note">重庆风味香辣牛蛙 · 脆莲藕片</span>
+              </li>
+              <li>
+                <span>XO Seafood Fried Rice</span>
+                <span>XO butter, flying fish roe</span>
+                <span class="menu-note">XO海鲜炒饭 · 黄油飞鱼籽</span>
+              </li>
+              <li>
+                <span>Galaxy Nebula Mocktail</span>
+                <span>Butterfly pea, yuzu, lychee foam</span>
+                <span class="menu-note">Galaxy Nebula 无酒精特调 · 蝶豆花×柚子×荔枝泡沫</span>
+              </li>
+              <li>
+                <span>Zero-Proof Highball</span>
+                <span>Smoked lapsang, plum bitters</span>
+                <span class="menu-note">零度嗨波 · 正山小种烟熏茶×梅子苦精</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="location" id="location">
+        <div class="container split">
+          <div class="location-copy" data-animate="fade-up">
+            <p class="eyebrow">Visit &amp; Connect</p>
+            <h2>Find us in SE17</h2>
+            <p>
+              Step off Walworth Road and into an immersive neon hideout. We’re minutes from Elephant &amp; Castle and fully equipped for late-night karaoke, charcoal BBQ feasts, and private celebrations.
+            </p>
+            <div class="contact-grid">
+              <div class="contact-card">
+                <span class="label">Reservations</span>
+                <a class="contact-link" href="tel:+447904018377">07904 018 377</a>
+                <span class="helper">English &amp; Mandarin assistance daily from early afternoon till late.</span>
+              </div>
+              <div class="contact-card wechat-card">
+                <span class="label">WeChat</span>
+                <p class="contact-link">Galaxy_London</p>
+                <span class="helper">ID: Galaxy_London</span>
+                <span class="helper">Add us for instant room availability, set menus, and members-only drops.</span>
+              </div>
+            </div>
+          </div>
+          <div class="map-card" data-animate="fade-up" data-delay="140">
+            <iframe
+              title="Galaxy London on Google Maps"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=211%20Walworth%20Rd,%20London,%20SE17%201RL&amp;output=embed"
+            ></iframe>
+            <div class="map-info">
+              <span class="map-title">Galaxy London</span>
+              <span class="map-address">211 Walworth Rd, London SE17 1RL</span>
+              <a class="map-link" href="https://maps.google.com/?q=Galaxy+London+211+Walworth+Rd+SE17+1RL" target="_blank" rel="noreferrer">Open in Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" aria-label="Guest reviews">
+        <div class="container">
+          <div class="section-heading" data-animate="fade-up">
+            <p class="eyebrow">Loved by the community</p>
+            <h2>What guests are saying</h2>
+          </div>
+          <div class="review-grid">
+            <figure class="review-card" data-animate="fade-up">
+              <blockquote>
+                “Galaxy Karaoke was an egg-cellent vibe. The egg and pork fried rice is something I still think about. Staff were amazing and the rooms futuristic.”
+              </blockquote>
+              <figcaption>— Lucrece G.</figcaption>
+            </figure>
+            <figure class="review-card" data-animate="fade-up" data-delay="100">
+              <blockquote>
+                “反正是伦敦最好吃好唱的KTV就对了！曲库超全，桂花鸭、红油毛血旺必点，房间 futuristic 又好预订。”
+              </blockquote>
+              <figcaption>— Mingzhuo L.</figcaption>
+            </figure>
+            <figure class="review-card" data-animate="fade-up" data-delay="160">
+              <blockquote>
+                “Food is always incredible, rooms are spotless, and bookings are seamless. My go-to for karaoke nights.”
+              </blockquote>
+              <figcaption>— Lucas V.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" aria-label="Frequently asked questions">
+        <div class="container split">
+          <div class="section-heading" data-animate="fade-up">
+            <p class="eyebrow">FAQ</p>
+            <h2>Everything you need to know</h2>
+            <p>Galaxy London enforces a no-alcohol policy for guests under 18 and requires valid photo ID upon arrival. Reach out for bespoke events and multilingual support.</p>
+          </div>
+          <div class="accordion" data-animate="fade-up" data-delay="120">
+            <details>
+              <summary>Do you cater to large parties?</summary>
+              <p>Absolutely. From intimate 6-person suites to 20+ guest takeovers, our team curates menus, AV, and bottle service to match your vibe.</p>
+            </details>
+            <details>
+              <summary>What are the service hours?</summary>
+              <p>We operate late into the night with extended hours on weekends. Contact us for peak availability and after-hours access.</p>
+            </details>
+            <details>
+              <summary>Can I bring my own cake?</summary>
+              <p>Yes. Let our team know ahead of time and we’ll prepare plating and storage so your celebration flows seamlessly.</p>
+            </details>
+            <details>
+              <summary>Do you have non-alcoholic options?</summary>
+              <p>Our bar programme includes zero-proof cocktails, premium teas, and fresh juices to keep every guest in the mix.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="#top" class="brand brand-footer">
+              <img class="brand-logo" src="./assets/galaxy-logo.png" alt="Galaxy London logo" />
+              <span class="brand-name">Galaxy London</span>
+            </a>
+            <p>Where good food, music, and memories meet.</p>
+            <ul class="socials">
+              <li><a href="https://www.instagram.com/galaxy.london" target="_blank" rel="noreferrer">Instagram</a></li>
+              <li><a href="https://www.tiktok.com/@galaxy.london" target="_blank" rel="noreferrer">TikTok</a></li>
+              <li><a href="https://www.xiaohongshu.com/user/profile/714794556" target="_blank" rel="noreferrer">小红薯</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Book a room</h3>
+            <p class="footer-highlight">Call <a href="tel:+447904018377">07904 018 377</a> (EN &amp; 中文)</p>
+            <p class="footer-note">WeChat: Galaxy_London</p>
+            <p class="footer-note">Business collaboration:<br /><a href="mailto:marketing@galaxy-london.com">marketing@galaxy-london.com</a></p>
+            <a class="btn-outline" href="https://galaxy-london.com/contact" target="_blank" rel="noreferrer">Send enquiry</a>
+          </div>
+          <div>
+            <h3>Visit us</h3>
+            <address>
+              211 Walworth Rd<br />
+              London, SE17 1RL
+            </address>
+            <p class="footer-note">Opening hours: Monday – Sunday, 5:00 pm – 3:00 am<br />Food served until 1:00 am · Drinks until 2:00 am</p>
+            <p>Tube: Elephant &amp; Castle · Walk 6 mins</p>
+          </div>
+          <div>
+            <h3>Stay in the loop</h3>
+            <form class="newsletter" action="https://galaxy-london.com" method="post">
+              <label class="sr-only" for="email">Email</label>
+              <input id="email" type="email" name="email" placeholder="Enter your email" required />
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <p class="legal">© <span id="year"></span> Galaxy London. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+

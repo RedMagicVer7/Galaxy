@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galaxy London | Food &amp; Drink Menus</title>
+    <meta
+      name="description"
+      content="Discover Galaxy London's recommended menu, full Chinese BBQ line-up, party experience menus, and drink list."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./scripts.js"></script>
+  </head>
+  <body class="food-page">
+    <div class="background-canvas" aria-hidden="true">
+      <div class="aurora"></div>
+      <div class="grid"></div>
+    </div>
+
+    <header class="site-header" data-animate="fade-up">
+      <div class="container">
+        <a href="index.html" class="brand" aria-label="Galaxy London home">
+          <img class="brand-logo" src="./assets/galaxy-logo.png" alt="Galaxy London logo" />
+          <span class="brand-name">Galaxy London</span>
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
+            <span class="nav-toggle-bar"></span>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <ul id="site-menu" class="menu">
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#membership">Membership</a></li>
+            <li><a href="index.html#packages">Packages</a></li>
+            <li><a class="is-active" href="#top">Food &amp; Drink</a></li>
+            <li><a href="index.html#location">Location</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-cta">
+          <a class="btn btn-outline" href="https://www.opentable.co.uk/r/galaxy-london" target="_blank" rel="noreferrer">Book via OpenTable</a>
+          <a class="btn" href="index.html#membership">Join Membership</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="food-hero">
+        <div class="container split">
+          <div class="food-hero-copy" data-animate="fade-up">
+            <p class="eyebrow">Food &amp; Drink</p>
+            <h1>Chinese BBQ favourites with a karaoke heartbeat.</h1>
+            <p>
+              Explore our best-selling sharing menus, full à la carte line-up, and experience sets crafted for late-night karaoke parties. Everything is designed to fuel the music, keep the energy high, and celebrate togetherness.
+            </p>
+            <dl class="food-meta">
+              <div>
+                <dt>Kitchen hours</dt>
+                <dd>5:00 pm – 1:00 am daily</dd>
+              </div>
+              <div>
+                <dt>Drinks till</dt>
+                <dd>2:00 am</dd>
+              </div>
+              <div>
+                <dt>Booking hotline</dt>
+                <dd><a href="tel:+447904018377">07904 018 377</a></dd>
+              </div>
+            </dl>
+          </div>
+          <div class="food-hero-gallery" data-animate="fade-up" data-delay="120">
+            <figure class="food-gallery-card primary">
+              <img src="./assets/food/832cf8cdca4153ae7d400b16f0338700.webp" alt="Charcoal BBQ skewers and sharing dishes at Galaxy London" loading="lazy" />
+            </figure>
+            <figure class="food-gallery-card secondary">
+              <img src="./assets/food/da79c12aaa9c7abd42507c996c67f2cd.webp" alt="Galaxy London seasonal platter close-up" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="food-section" id="recommended">
+        <div class="container">
+          <div class="section-heading" data-animate="fade-up">
+            <p class="eyebrow">Recommended menu</p>
+            <h2>The crowd-favourite line-up</h2>
+            <p>
+              Curated for ease and flavour, this menu bundles our most-loved Chinese BBQ signatures so you can order once and feast together without decision fatigue.
+            </p>
+          </div>
+          <div class="menu-grid" data-animate="fade-up" data-delay="100">
+            <article class="menu-card">
+              <h3>BBQ Essentials</h3>
+              <ul>
+                <li>Beef &amp; lamb skewers grilled over charcoal</li>
+                <li>King prawns with house chilli glaze</li>
+                <li>Chicken wings with secret spice rub</li>
+              </ul>
+            </article>
+            <article class="menu-card">
+              <h3>Cold Plates</h3>
+              <ul>
+                <li>Garlic ginger chicken</li>
+                <li>Soaked edamame and peanuts</li>
+                <li>Cucumber jellyfish salad</li>
+              </ul>
+            </article>
+            <article class="menu-card">
+              <h3>Comfort Staples</h3>
+              <ul>
+                <li>XO seafood fried rice</li>
+                <li>Braised beef brisket ramen</li>
+                <li>Triplet stuffed dumplings</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="food-section" id="full-menu">
+        <div class="container">
+          <div class="section-heading" data-animate="fade-up">
+            <p class="eyebrow">Full menu</p>
+            <h2>Every dish, every craving</h2>
+            <p>
+              Browse the complete Galaxy London food collection. The full-resolution menu posters are displayed below—no extra clicks needed.
+            </p>
+          </div>
+          <div class="menu-posters" data-animate="fade-up" data-delay="120">
+            <figure class="poster-card">
+              <div class="poster-frame">
+                <img src="./assets/food/Galaxy-menu-A3_page-0001-scaled.webp" alt="Galaxy London food menu page 1" loading="lazy" />
+              </div>
+              <div class="poster-actions">
+                <a class="poster-link" href="./assets/food/Galaxy-menu-A3_page-0001-scaled.webp" target="_blank" rel="noreferrer">View full resolution</a>
+                <a class="poster-link download" href="./assets/food/Galaxy-menu-A3_page-0001-scaled.webp" download>Download</a>
+              </div>
+              <figcaption>Full menu · Page 1</figcaption>
+            </figure>
+            <figure class="poster-card">
+              <div class="poster-frame">
+                <img src="./assets/food/Galaxy-menu-A3_page-0002-scaled.webp" alt="Galaxy London food menu page 2" loading="lazy" />
+              </div>
+              <div class="poster-actions">
+                <a class="poster-link" href="./assets/food/Galaxy-menu-A3_page-0002-scaled.webp" target="_blank" rel="noreferrer">View full resolution</a>
+                <a class="poster-link download" href="./assets/food/Galaxy-menu-A3_page-0002-scaled.webp" download>Download</a>
+              </div>
+              <figcaption>Full menu · Page 2</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="food-section" id="experience-menu">
+        <div class="container">
+          <div class="section-heading" data-animate="fade-up">
+            <p class="eyebrow">Experience menu</p>
+            <h2>Party packages built to share</h2>
+            <p>
+              Planning a celebration? Our experience menu combines BBQ platters, snacks, and cocktails to match your karaoke vibe for up to eight guests.
+            </p>
+          </div>
+          <div class="experience-display" data-animate="fade-up" data-delay="120">
+            <img src="./assets/food/Experience-Menu-New-scaled.webp" alt="Galaxy London experience party packages menu" loading="lazy" />
+          </div>
+          <div class="experience-actions" data-animate="fade-up" data-delay="180">
+            <a class="btn" href="index.html#packages">Explore Packages</a>
+            <a class="btn-secondary" href="https://galaxy-london.com/party-packages/" target="_blank" rel="noreferrer">View Party Packages</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="food-section" id="drinks">
+        <div class="container split">
+          <div class="drink-copy" data-animate="fade-up">
+            <p class="eyebrow">Drink list</p>
+            <h2>Cocktails, craft sharers, and premium bottles</h2>
+            <p>
+              From signature highballs and zero-proof elixirs to whisky, rum, tequila, and vodka favourites, the bar keeps pace with your playlist all night. Download the latest list to plan your round.
+            </p>
+            <a class="btn" href="https://galaxy-london.com/wp-content/uploads/2025/10/GALAXY-DRINK-MENU-.pdf" target="_blank" rel="noreferrer">Download drink menu</a>
+          </div>
+          <div class="drink-note" data-animate="fade-up" data-delay="140">
+            <div class="note-card">
+              <h3>Service highlights</h3>
+              <ul>
+                <li>Happy hour packages with cocktail jugs</li>
+                <li>Bottle service for private suites</li>
+                <li>Zero-proof signatures &amp; fresh juices</li>
+                <li>Late-night last orders at 2:00 am</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="food-section" id="set-menus">
+        <div class="container">
+          <div class="section-heading" data-animate="fade-up">
+            <p class="eyebrow">Set menus</p>
+            <h2>Choose your four-hour session</h2>
+            <p>
+              Lock in a private room with curated dishes, soft drinks, juices, and spirits included. Deposits secure your slot, and members enjoy exclusive discounts.</p>
+          </div>
+          <div class="set-menu-grid" data-animate="fade-up" data-delay="120">
+            <article class="set-card">
+              <header>
+                <p class="set-name">S1 · £440</p>
+                <p class="set-note">Was £480 · deposit £440</p>
+              </header>
+              <ul>
+                <li>BBQ skewers (beef, lamb, prawn, chicken wings)</li>
+                <li>Cold dishes: ginger chicken, edamame &amp; peanuts, jellyfish salad</li>
+                <li>Staples: brisket ramen, tomato egg ramen, XO fried rice, dumplings</li>
+                <li>Drinks: soft drinks ×8, juice jugs ×3, 2 bottles prosecco + 18 shots</li>
+              </ul>
+            </article>
+            <article class="set-card featured">
+              <header>
+                <p class="set-name">S2 · £550</p>
+                <p class="set-note">Was £600 · deposit £550</p>
+              </header>
+              <ul>
+                <li>Expanded BBQ skewers set (x10 each)</li>
+                <li>Cold dishes with spicy chicken &amp; jellyfish salad</li>
+                <li>Staples with Korean cold noodles and XO fried rice</li>
+                <li>Drinks: soft drinks ×12, juice jugs ×3, 2 prosecco + 24 shots</li>
+              </ul>
+            </article>
+            <article class="set-card">
+              <header>
+                <p class="set-name">S3 · £660</p>
+                <p class="set-note">Was £720 · deposit £660</p>
+              </header>
+              <ul>
+                <li>Premium BBQ skewers (x12 each) with lo-mei platter</li>
+                <li>Cold dishes featuring osmanthus duck &amp; spicy chicken</li>
+                <li>Staples: dan dan noodles, XO fried rice, dumplings</li>
+                <li>Drinks: soft drinks ×16, juice jugs ×3, 2 prosecco + 36 shots</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html#top" class="brand brand-footer">
+              <img class="brand-logo" src="./assets/galaxy-logo.png" alt="Galaxy London logo" />
+              <span class="brand-name">Galaxy London</span>
+            </a>
+            <p>Where good food, music, and memories meet.</p>
+            <ul class="socials">
+              <li><a href="https://www.instagram.com/galaxy.london" target="_blank" rel="noreferrer">Instagram</a></li>
+              <li><a href="https://www.tiktok.com/@galaxy.london" target="_blank" rel="noreferrer">TikTok</a></li>
+              <li><a href="https://www.xiaohongshu.com/user/profile/714794556" target="_blank" rel="noreferrer">小红薯</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Book a room</h3>
+            <p class="footer-highlight">Call <a href="tel:+447904018377">07904 018 377</a> (EN &amp; 中文)</p>
+            <p class="footer-note">WeChat: Galaxy_London</p>
+            <p class="footer-note">Business collaboration:<br /><a href="mailto:marketing@galaxy-london.com">marketing@galaxy-london.com</a></p>
+            <a class="btn-outline" href="https://galaxy-london.com/contact" target="_blank" rel="noreferrer">Send enquiry</a>
+          </div>
+          <div>
+            <h3>Visit us</h3>
+            <address>
+              211 Walworth Rd<br />
+              London, SE17 1RL
+            </address>
+            <p>Tube: Elephant &amp; Castle · Walk 6 mins</p>
+          </div>
+          <div>
+            <h3>Stay in the loop</h3>
+            <form class="newsletter" action="https://galaxy-london.com" method="post">
+              <label class="sr-only" for="email">Email</label>
+              <input id="email" type="email" name="email" placeholder="Enter your email" required />
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <p class="legal">© <span id="year"></span> Galaxy London. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
